@@ -5,7 +5,7 @@ from random import randint
 class Character():
     def __init__(self, name):
         self.name = name 
-        self.hp = 3 # зжоровье персонажа
+        self.hp = 3 # здоровье персонажа
         self.key_found = False # ключ найден - означает возможность перехода на следующий уровень
         self.artifact_activated = False # артифакт - нужен для выхода из игры 
         self.symbol_remembered = False #символ запомнет - нужен для подтверждения прочтения карты 
@@ -13,7 +13,7 @@ class Character():
         self.flint = False # кремень - нужен чтобы зажечь факел
         self.medicinal_herb = False # Лечебная трава (+ 1 к здоровью)
 
-player_one = Character("Игрок") 
+player_one = Character("player") 
 
 class Location:
     def enter(self):
